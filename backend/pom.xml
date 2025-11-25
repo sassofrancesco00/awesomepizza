@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.awesomepizza</groupId>
-	<artifactId>order-management</artifactId>
+	<artifactId>awesomepizza</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Awesome Pizza Order Management</name>
 	<description>Awesome Pizza Order Management</description>
@@ -82,6 +82,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.3.0</version>
 		</dependency>
 	</dependencies>
 
