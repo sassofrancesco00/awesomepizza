@@ -1,0 +1,18 @@
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Angular cache
+frontend/.angular/
+
+# Java / Spring Boot
+backend/target/
+backend/*.jar
+backend/.mvn/
+backend/mvnw*
+backend/logs/
+
+# IDE
+.idea/
+.vscode/
+*.iml
