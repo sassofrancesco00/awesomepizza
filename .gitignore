@@ -16,3 +16,4 @@ backend/logs/
 .idea/
 .vscode/
 *.iml
+backend/data/awesomepizza.mv.db
