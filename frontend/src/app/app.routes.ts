@@ -6,17 +6,17 @@ export const routes: Routes = [
   // Lazy loading dei componenti
   {
     path: 'customer',
-    loadComponent: () => import('./components/customer/order-form/order-form.component')
-      .then(m => m.OrderFormComponent)
+    loadComponent: () => import('./components/customer/order-form/order-form.ts')
+      .then(m => m.OrderForm)
   },
   {
     path: 'pizzaiolo',
-    loadComponent: () => import('./components/pizzaiolo/orders-queue/orders-queue.component')
-      .then(m => m.OrdersQueueComponent)
+    loadComponent: () => import('./components/pizzaiolo/orders-queue/orders-queue.ts')
+      .then(m => m.OrdersQueue)
   },
   {
     path: 'order/:code',
-    loadComponent: () => import('./components/customer/order-status/order-status.component')
-      .then(m => m.OrderStatusComponent)
+    loadComponent: () => import('./components/customer/order-status/order-status.ts')
+      .then(m => m.OrderStatus)
   }
 ];
