@@ -7,8 +7,7 @@ package com.awesomepizza.order_management.model.entity;
  */
 public enum OrderStatus {
     PENDING,
-    IN_PREPARATION,
-    OUT_FOR_DELIVERY,
-    DELIVERED,
+    IN_PROGRESS,
+    COMPLETED,
     CANCELLED
 }
