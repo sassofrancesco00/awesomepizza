@@ -2,6 +2,7 @@ package com.awesomepizza.order_management.controller;
 
 import com.awesomepizza.order_management.model.dto.CreateOrderRequest;
 import com.awesomepizza.order_management.model.entity.Order;
+import com.awesomepizza.order_management.model.entity.OrderItem;
 import com.awesomepizza.order_management.model.entity.OrderStatus;
 import com.awesomepizza.order_management.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,11 +15,7 @@ import tools.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
@@ -45,7 +42,7 @@ public class OrderControllerTest {
     @Test
     void testCreateOrder() throws Exception {
         CreateOrderRequest req = new CreateOrderRequest();
-        req.setItems(List.of(new OrderItemRequest("Margherita", 1, "")));
+        req.setItems(List.of(new OrderItem("Margherita", 1, "")));
 
         Order o = new Order();
         o.setOrderCode("ABC123");

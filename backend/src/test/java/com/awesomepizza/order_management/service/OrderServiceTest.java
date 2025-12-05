@@ -4,6 +4,7 @@ import com.awesomepizza.order_management.exception.InvalidOrderStateException;
 import com.awesomepizza.order_management.exception.OrderNotFoundException;
 import com.awesomepizza.order_management.model.dto.CreateOrderRequest;
 import com.awesomepizza.order_management.model.entity.Order;
+import com.awesomepizza.order_management.model.entity.OrderItem;
 import com.awesomepizza.order_management.model.entity.OrderStatus;
 import com.awesomepizza.order_management.repository.OrderRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -23,7 +24,7 @@ import static org.mockito.Mockito.*;
  * @version 1.0
  * @since 2025
  */
-public class OrderServiceImplTest {
+public class OrderServiceTest {
 
     private OrderRepository repo;
     private OrderServiceImpl service;
@@ -37,7 +38,7 @@ public class OrderServiceImplTest {
     @Test
     void testCreateOrder() {
         CreateOrderRequest req = new CreateOrderRequest();
-        req.setItems(List.of(new OrderItemRequest("Margherita", 2, null)));
+        req.setItems(List.of(new OrderItem("Margherita", 2, null)));
 
         Order saved = new Order();
         saved.setStatus(OrderStatus.PENDING);

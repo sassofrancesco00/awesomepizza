@@ -2,8 +2,8 @@ package com.awesomepizza.order_management.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.time.LocalDateTime;
 import java.util.Map;
@@ -13,7 +13,7 @@ import java.util.Map;
  * @version 1.0
  * @since 2025
  */
-@ControllerAdvice
+@RestControllerAdvice
 public class RestExceptionHandler {
 
     @ExceptionHandler(OrderNotFoundException.class)
