@@ -1,5 +1,6 @@
 package com.awesomepizza.order_management.exception;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -13,6 +14,7 @@ import java.util.Map;
  * @version 1.0
  * @since 2025
  */
+@Hidden
 @RestControllerAdvice
 public class RestExceptionHandler {
 

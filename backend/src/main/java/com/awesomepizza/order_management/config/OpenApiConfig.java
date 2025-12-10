@@ -29,18 +29,15 @@ public class OpenApiConfig {
                         .version("v1.0.0")
                         .contact(new Contact()
                                 .name("Francesco")
-                                .email("francesco@awesomepizza.com")
-                                .url("https://awesomepizza.com"))
+                                .email("sasso.francescosasso00@gmail.com"))
                         .license(new License()
                                 .name("MIT License")
                                 .url("https://opensource.org/licenses/MIT")))
                 .servers(List.of(
                         new Server()
                                 .url("http://localhost:8080")
-                                .description("Development Server"),
-                        new Server()
-                                .url("https://api.awesomepizza.com")
-                                .description("Production Server")))
+                                .description("Development Server")
+                ))
                 .tags(List.of(
                         new Tag()
                                 .name("Orders")

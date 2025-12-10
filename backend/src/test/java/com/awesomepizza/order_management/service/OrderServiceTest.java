@@ -24,7 +24,7 @@ import static org.mockito.Mockito.*;
  * @version 1.0
  * @since 2025
  */
-public class OrderServiceTest {
+class OrderServiceTest {
 
     private OrderRepository repo;
     private OrderServiceImpl service;
